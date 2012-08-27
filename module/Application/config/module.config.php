@@ -8,6 +8,9 @@
  */
 
 return array(
+	'application' => array(
+		'use_zones' => false,
+	),
     'router' => array(
         'routes' => array(
             'home' => array(
