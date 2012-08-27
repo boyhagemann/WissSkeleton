@@ -13,14 +13,7 @@ use Zend\Mvc\ModuleRouteListener;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 
 class Module
-{
-    public function init()
-	{		
-		$namespace = 'Gedmo\Mapping\Annotation';
-		$lib = 'vendor/gedmo/doctrine-extensions/lib';
-		AnnotationRegistry::registerAutoloadNamespace($namespace, $lib);		
-	}
-	
+{	
     public function onBootstrap($e)
     {
 		$this->initDoctrine($e);
@@ -49,6 +42,12 @@ class Module
 	 */
 	public function initDoctrine($e)
 	{		
+        // Register the Gedmo plugin to Doctrine
+    	$namespace = 'Gedmo\Mapping\Annotation';
+		$lib = 'vendor/gedmo/doctrine-extensions/lib';
+		AnnotationRegistry::registerAutoloadNamespace($namespace, $lib);		
+        
+        // Get the Doctrine Event Manager to attach the Gedmo plugins
 		$evm = $e->getApplication()->getServiceManager()->get('doctrine.eventmanager.orm_default');		
 		
 		// Enable sluggable
