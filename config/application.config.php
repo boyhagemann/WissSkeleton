@@ -6,6 +6,7 @@ return array(
 		'DoctrineORMModule',
 		'ZfcTwitterBootstrap',
         'Wiss',
+		'AsseticBundle',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
