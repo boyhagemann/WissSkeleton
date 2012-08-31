@@ -102,5 +102,9 @@ return array(
                 'paths' => array(__NAMESPACE__ . '/Entity'),
             ),
         ),
-    )
+    ),
+    'assetic_configuration' => array(
+        'debug'              => true,
+        'webPath'            => 'public/assets',
+	),
 );
