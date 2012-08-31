@@ -1,33 +1,15 @@
-ZendSkeletonApplication
-=======================
+Wiss Skeleton Application
+=========================
 
-Introduction
+Requirements
 ------------
-This is a simple, skeleton application using the ZF2 MVC layer and module
-systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with ZF2.
-
+This module requires the Wiss module to be installed in the same folder (see https://github.com/boyhagemann/Wiss for more info)
 
 Installation
 ------------
-
-Using Composer (recommended)
-----------------------------
-The recommended way to get a working copy of this project is to clone the repository
-and use composer to install dependencies:
+To install this module, simply execute these commands:
 
     cd my/project/dir
-    git clone git://github.com/zendframework/ZendSkeletonApplication.git
-    cd ZendSkeletonApplication
+    git clone https://github.com/boyhagemann/WissSkeleton
+    cd WissSkeleton
     php composer.phar install
-
-Using Git submodules
---------------------
-Alternatively, you can install using native git submodules:
-
-    git clone git://github.com/zendframework/ZendSkeletonApplication.git --recursive
-
-Virtual Host
-------------
-Afterwards, set up a virtual host to point to the public/ directory of the
-project and you should be ready to go!
