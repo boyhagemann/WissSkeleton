@@ -9,6 +9,7 @@
 
 return array(
 	'application' => array(
+		'installed' => false,
 		'use_zones' => false,
 	),
     'router' => array(
