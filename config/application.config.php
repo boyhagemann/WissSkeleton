@@ -5,7 +5,7 @@ return array(
 		'DoctrineORMModule',
 		'ZfcTwitterBootstrap',
         'Wiss',
-		'AsseticBundle',
+		'AssetManager',
         'Application',
     ),
     'module_listener_options' => array(
