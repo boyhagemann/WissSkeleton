@@ -104,8 +104,9 @@ return array(
             ),
         ),
     ),
-    'assetic_configuration' => array(
-        'debug'              => true,
-        'webPath'            => 'public/assets',
+    'asset_manager' => array(
+		'resolver_configs' => array(
+			'paths' => __DIR__ . '/../assets',
+		)		
 	),
 );
