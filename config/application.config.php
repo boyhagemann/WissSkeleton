@@ -15,7 +15,7 @@ return array(
         'module_paths' => array(
             './module',
             './vendor',
-			'Wiss' => '../wiss'
+			'Wiss' => '../../wiss'
         ),
     ),
 );
