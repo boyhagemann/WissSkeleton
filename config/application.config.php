@@ -10,14 +10,12 @@ return array(
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
-            '../website/config/autoload/{,*.}{global,local}.php',
             'config/autoload/{,*.}{global,local}.php',
         ),
         'module_paths' => array(
             './module',
-            '../website/module',
-            '../website/vendor',
-			'Wiss' => '../../wiss'
+            './vendor',
+			'Wiss' => '../wiss'
         ),
     ),
 );
