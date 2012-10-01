@@ -94,16 +94,27 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
-	'doctrine' => array(
+    'doctrine' => array(        
+        'connection' => array(
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host'     => 'localhost',
+                    'port'     => '3306',
+                )
+            )
+        ),
         'driver' => array(
+            'application_driver' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'cache' => 'array',
+                'paths' => array('Application/Entity')
+            ),      
             'orm_default' => array(
                 'drivers' => array(
                     'Application' => 'application_driver'
-				)
-            ),
-			'application_driver' => array(
-                'paths' => array(__NAMESPACE__ . '/Entity'),
-            ),
-        ),
-    ),
+                )
+            )
+        )
+    )
 );
