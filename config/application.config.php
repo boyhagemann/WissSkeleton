@@ -6,6 +6,7 @@ return array(
 		'ZfcTwitterBootstrap',
         'Wiss',
 		'AssetManager',
+		'ZendDeveloperTools',
         'Application',
     ),
     'module_listener_options' => array(
